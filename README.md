@@ -47,7 +47,7 @@
 - cкачайте репозиторий с приложением или склонируйте его с помощью команды:
 
 ```sh
-git clone https://github.com/MashaMoreva/coin.git
+git clone https://github.com/PetrPit-cpu/Coin.git
 ```
 
 - перейдите в папку проекта:
