@@ -1,0 +1,166 @@
+@import "../../styles/colors.scss";
+
+.currency {
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    margin-bottom: 56px;
+  }
+  &-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin-bottom: 25px;
+  }
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 587px 703px;
+    gap: 50px;
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  &-code {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  &-pass {
+    border-bottom: 2px dashed $black;
+  }
+  &-balance {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+}
+
+.user,
+.exchange {
+  position: relative;
+  height: 411px;
+  padding: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+
+  &-currencies {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-height: 265px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  &-currency {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+  }
+}
+
+.rate {
+  padding: 50px;
+  border-radius: 50px;
+  background-color: $gray7;
+  height: 728px;
+  &-exchanges {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    height: 578px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  &-element {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 10px;
+  }
+  &-currency {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  &-value {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  &-pass {
+    &.green {
+      border-bottom: 2px dashed $success;
+    }
+    &.red {
+      border-bottom: 2px dashed $secondary4;
+    }
+  }
+}
+
+.exchange {
+  height: 273px;
+  &-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &-wrapper {
+    display: flex;
+    gap: 20px;
+    .dropdown {
+      margin: 0;
+    }
+    .dropdown-input {
+      border-color: $gray5;
+      width: 143px;
+    }
+    .dropdown-options {
+      width: 142px;
+      top: 47px;
+      left: 38px;
+      max-height: 165px;
+      overflow-y: auto;
+    }
+  }
+  &-button {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+}
+
+.arrow {
+  width: 20px;
+  height: 10px;
+  margin-top: 6.5px;
+  padding: 5px;
+  background-repeat: no-repeat;
+}
+
+.arrow-red {
+  @extend .arrow;
+  background-image: url(../../assets/images/arrow-red.svg);
+}
+
+.arrow-green {
+  @extend .arrow;
+  background-image: url(../../assets/images/arrow-green.svg);
+}
+
+.error-message {
+  position: absolute;
+  top: 75px;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: $error;
+}

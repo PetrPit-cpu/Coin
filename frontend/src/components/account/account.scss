@@ -1,0 +1,134 @@
+@import "../../styles/colors.scss";
+
+.account {
+  &-controls {
+    display: flex;
+    margin-bottom: 30px;
+    &-title {
+      font-size: 34px;
+      letter-spacing: -0.68px;
+      margin-right: 35px;
+    }
+    &-button-icon {
+      background-image: url(../../assets/images/arro-left.svg);
+      width: 24px;
+      height: 24px;
+    }
+    &-button {
+      margin-left: auto;
+    }
+  }
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &-number {
+      font-size: 34px;
+      font-weight: 400;
+      letter-spacing: -0.68px;
+    }
+    &-balance {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      &-subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+      }
+      &-digits {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -0.4px;
+        margin-top: 5px;
+      }
+    }
+  }
+  &-wrapper {
+    display: flex;
+    gap: 50px;
+    .dropdown-select {
+      margin-bottom: 25px;
+    }
+    .dropdown-input {
+      border: 1px solid $gray5;
+      background-color: $white;
+    }
+    .dropdown-options {
+      width: 300px;
+      left: 205px;
+      top: 47px;
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 25px;
+    }
+    &-form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      border-radius: 50px;
+      background-color: $gray7;
+      padding: 25px 50px;
+
+      &-button-icon {
+        background-image: url(../../assets/images/mail.svg);
+        width: 24px;
+        height: 24px;
+      }
+      &-button {
+        margin-top: 25px;
+        width: fit-content;
+        margin-left: 202px;
+      }
+    }
+    &-chart {
+      padding: 25px 50px;
+      border-radius: 50px;
+      box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &-table {
+    margin-top: 50px;
+    padding: 25px 50px 66px 50px;
+    border-radius: 56px;
+    background-color: $gray7;
+    &-header {
+      background-color: $primary;
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      padding: 20px 50px;
+      color: $white;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-row-wrapper {
+      // max-height: calc(100vh - 940px);
+      overflow-y: auto;
+    }
+    &-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      padding: 20px 50px 25px 50px;
+      border-bottom: 2px solid $secondary3;
+    }
+    &-cell {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &-error-message {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    color: $error;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../styles/colors.scss";
+
+.button {
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  color: $white;
+  background-color: $primary;
+  letter-spacing: -0.16px;
+  font-weight: 700;
+  &:disabled {
+    background-color: $gray5;
+    cursor: not-allowed;
+  }
+
+  &.icon {
+    // Стили для кнопки с иконкой
+  }
+
+  &:hover {
+    // background-color: $primary-hover;
+    // color: $white-hover;
+    // border-color: $primary-hover;
+  }
+}
+
+.button.reversed {
+  color: $primary;
+  background-color: $white;
+  border-color: $primary;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.active {
+    background-color: $info;
+  }
+}

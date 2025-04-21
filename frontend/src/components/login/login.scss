@@ -1,0 +1,32 @@
+@import "../../styles/colors.scss";
+
+.login {
+  max-width: 500px;
+  background-color: $gray7;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 85px 50px 40px;
+  margin: 0 auto;
+  &-title {
+    margin-left: 65px;
+    margin-bottom: 35px;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.68px;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &-button {
+    margin: 30px 0 0 75px;
+  }
+}

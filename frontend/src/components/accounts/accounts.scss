@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  &-controls {
+    display: flex;
+    &-title {
+      font-size: 34px;
+      letter-spacing: -0.68px;
+      margin-right: 35px;
+    }
+
+    &-button-icon {
+      background-image: url(../../assets/images/plus.svg);
+      width: 24px;
+      height: 24px;
+    }
+    &-button {
+      margin-left: auto;
+    }
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 50px 70px;
+  }
+}

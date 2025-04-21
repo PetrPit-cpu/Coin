@@ -1,0 +1,64 @@
+@import "./fonts.scss";
+@import "./colors.scss";
+
+body {
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  max-width: 1440px;
+  background-color: $white;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input {
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+main {
+  padding: 50px;
+}
